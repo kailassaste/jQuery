@@ -64,4 +64,4 @@ $('p').on(
 
 // $('#wiki').slideDown(1000);
 // $('#wiki').slideUp(1000);
-$('#wiki').slideToggle(1000);
+// $('#wiki').slideToggle(1000);
