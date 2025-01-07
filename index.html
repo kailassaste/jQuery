@@ -1,12 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JQuery</title>
-    <script src="js/jquery-3.7.1.min.js"></script>
+
 </head>
+
 <body>
-    this is my body
+    <p class='odd'> this is my body1</p>
+    <p id='second'> this is my body2</p>
+    <p class='odd'> this is my body3</p>
+    <p> this is my body4</p>
+
 </body>
+<script src="js/jquery-3.7.1.min.js"></script>
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script> -->
+<script>
+
+$(document).ready(function(){
+// our jquery code here
+    console.log($); //$ it means jquery syntax
+    // $('selector').action()  --- syntax
+
+    // 1) element selector example
+    // $('p').click(); 
+
+    $('p').click(function () {
+        console.log('you clicked on p', this);
+        // $('p').hide();
+        //$(this).hide();
+        // $('#id').hide();
+        // $('.class').hide();
+    }); // when we click on p do this
+
+    // 2) id selector example
+    //$('#second').click();
+
+    // 3) class selector example
+    $('.odd').click();
+
+    //other selectors
+    // $('*').click();  //clicks on all the elements
+    // $('p.odd').click();
+    // $('p:first').click();
+
+
+})
+    
+</script>
+
+
 </html>
